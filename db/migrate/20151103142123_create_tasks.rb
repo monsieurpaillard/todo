@@ -1,7 +1,7 @@
 class CreateTasks < ActiveRecord::Migration
   def change
     create_table :tasks do |t|
-      t.boolean :status
+      t.boolean :status, default: false
       t.string :description
       t.string :name
 
